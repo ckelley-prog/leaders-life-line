@@ -7,7 +7,7 @@ st.set_page_config(page_title="Leaders Life Line", page_icon="🛡️", layout="
  
 # --- API CONFIGURATION ---
 # In production, this pulls securely from Streamlit's secrets manager so it isn't public.
-API_KEY = st.secrets.get("GEMINI_API_KEY", "YOUR_API_KEY_HERE")
+API_KEY = st.secrets.get("GEMINI_API_KEY", "AIzaSyBKy1dWvXY9-L0CwQGIMgO4lNpR0sOeIXk")
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-pro')
  
