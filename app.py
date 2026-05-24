@@ -42,7 +42,10 @@ st.sidebar.title("👤 Contextual Profile")
 component = st.sidebar.selectbox("Service Component", ["Army", "Navy", "Air Force", "Marines", "Coast Guard", "Space Force"])
 status = st.sidebar.selectbox("Duty Status", ["Active Duty", "National Guard", "Reserve", "Veteran"])
 rank = st.sidebar.selectbox("Rank Structure", ["Officer", "Warrant Officer", "Enlisted"])
- 
+
+st.sidebar.markdown("---")
+st.sidebar.warning("⚠️ **Security Notice:** Do not enter PII or PHI (Names, SSNs, specific unit designations). Session data is not saved.")
+
 # --- INPUT ---
 user_input = st.text_area("Describe the Circumstances:", height=200)
  
